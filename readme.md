@@ -20,7 +20,7 @@ my_symbolic_ref
 ```
 Returns:
 
-```
+```json
 {
   "ok" : true,
   "result" : [
