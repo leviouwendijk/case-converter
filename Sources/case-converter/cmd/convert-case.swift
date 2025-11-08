@@ -66,7 +66,8 @@ struct ConvertCase: ParsableCommand {
     )
     var inputs: [String]
     
-    @Argument(
+    @Option(
+        name: .shortAndLong,
         help: "Target case style: camel, snake, or pascal"
     )
     var style: ExpressibleCaseStyle = .snake
