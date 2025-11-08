@@ -1,0 +1,19 @@
+uuid = "0CD283F1-B578-4BA0-9C5C-A6475FBC172D"
+name = "case-converter"
+types {
+    "binary"
+}
+versions {
+    release {
+        major = 0
+        minor = 1
+        patch = 0
+    }
+}
+compile {
+    use = false
+    arguments {  }
+}
+details = ""
+author = "leviouwendijk"
+update = "https://raw.githubusercontent.com/leviouwendijk/case-converter/master/build-object.pkl"
