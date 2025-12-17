@@ -5,10 +5,10 @@ import PackageDescription
 
 let package = Package(
     name: "case-converter",
-    platforms: [
-        .macOS(.v13),
-        // .iOS(.v15)
-    ],
+    // platforms: [
+    //     .macOS(.v10_15),
+    //     // .iOS(.v15)
+    // ],
     dependencies: [
         .package(
             url: "https://github.com/apple/swift-argument-parser.git",
@@ -26,9 +26,6 @@ let package = Package(
                 .product(name: "ArgumentParser", package: "swift-argument-parser"),
                 .product(name: "Variables", package: "Variables"),
             ],
-            // sources: [
-            //     "case-converter"
-            // ],
         )
     ]
 )
