@@ -15,7 +15,7 @@ let package = Package(
             branch: "main"
         ),
         .package(
-            url: "https://github.com/leviouwendijk/plate.git",
+            url: "https://github.com/leviouwendijk/Variables.git",
             branch: "master"
         ),
     ],
@@ -24,7 +24,7 @@ let package = Package(
             name: "casecon",
             dependencies: [
                 .product(name: "ArgumentParser", package: "swift-argument-parser"),
-                .product(name: "plate", package: "plate"),
+                .product(name: "Variables", package: "Variables"),
             ],
             // sources: [
             //     "case-converter"

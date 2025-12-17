@@ -1,58 +1,6 @@
 import Foundation
 import ArgumentParser
-import plate
-
-enum ExpressibleCaseStyle: String, RawRepresentable, ExpressibleByArgument {
-    case camel     
-    case snake     
-    case pascal    
-
-    func toCaseStyle() -> CaseStyle {
-        switch self {
-        case .camel:
-            return .camel
-        case .snake:
-            return .snake
-        case .pascal:
-            return .pascal
-        }
-    }
-}
-
-enum ExpressibleSeparatorPolicy: String, RawRepresentable, ExpressibleByArgument {
-    case commonWithDot
-    case commonNoDot     
-    case whitespaceOnly  
-
-    func toSeparatorPolicy() -> SeparatorPolicy {
-        switch self {
-        case .commonWithDot:
-            return .commonWithDot
-        case .commonNoDot:
-            return .commonNoDot
-        case .whitespaceOnly:
-            return .whitespaceOnly
-        }
-    }
-}
-
-struct ConvertCaseResponse: Codable {
-    let ok: Bool
-    let result: [String]?
-    let error: String?
-    
-    init(result: [String]) {
-        self.ok = true
-        self.result = result
-        self.error = nil
-    }
-    
-    init(error: String) {
-        self.ok = false
-        self.result = nil
-        self.error = error
-    }
-}
+import Variables
 
 struct ConvertCase: ParsableCommand {
     static let configuration = CommandConfiguration(
