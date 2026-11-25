@@ -13,7 +13,7 @@
     {
       "identity" : "variables",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/leviouwendijk/Variables.git",
+      "location" : "https://github.com/swift-lco/Variables.git",
       "state" : {
         "branch" : "master",
         "revision" : "c533569cd399d8d4762f5f4f8241e2234735c6d0"
